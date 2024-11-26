@@ -1,0 +1,58 @@
+body {
+  background-color: white;
+}
+
+.meme-font {
+  font-family: "Impact", sans-serif;
+  font-size: 3em;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000;
+}
+
+.plain-button {
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  text-align: center;
+}
+
+.container img {
+  max-width: 100%;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+}
+
+.text-on-image {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1em;
+}
+
+.submit-button-text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  transform: rotate(180deg);
+  font-size: 3em;
+}
+
+.submit-button-text:hover {
+  transform: rotate(180deg) scale(1.2);
+}

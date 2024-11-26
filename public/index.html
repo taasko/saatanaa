@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Onks siel millane säätänää</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <span class="meme-font">Onks siel millane</span>
+      <br />
+
+      <div class="image-wrapper">
+        <img
+          src="/meme.png"
+          alt="Kaksi herrasmiestä kertomassa päivän säätä."
+        />
+
+        <div class="text-on-image">
+          <span class="meme-font" id="temperature"></span>
+          <span class="meme-font" id="city"></span>
+        </div>
+      </div>
+      <br />
+
+      <span class="meme-font">säätänää</span>
+      <br />
+      <br />
+
+      <form id="säätänää-form">
+        <input name="city" placeholder="Syötä kaupunki..." />
+
+        <button class="plain-button">
+          <span class="submit-button-text pentagram-emoji">⛤</span>
+        </button>
+      </form>
+
+      <button id="geo-button">tai paikanna</button>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
