@@ -1,0 +1,4 @@
+saatanaa.localhost {
+	root * /srv
+	file_server
+}
