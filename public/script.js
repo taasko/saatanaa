@@ -124,7 +124,7 @@ function geoFindMe(city) {
  * @throws {Error}
  */
 function cityToCoordinates(cityName) {
-  return fetch("/fi.json")
+  return fetch("fi.json")
     .then((res) => res.json())
     .then((data) => {
       const city = data.find(
