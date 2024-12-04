@@ -54,10 +54,6 @@ function onGeoClick() {
  * @returns {Promise<void>}
  */
 function getWeather(coords) {
-  console.debug(
-    `https://www.openstreetmap.org/#map=18/${coords.latitude}/${coords.longitude}`
-  );
-
   fetch(
     `https://nominatim.openstreetmap.org/reverse?lat=${coords.latitude}&lon=${coords.longitude}&format=json`,
     {
@@ -68,7 +64,6 @@ function getWeather(coords) {
       return res.json();
     })
     .then((res) => {
-      console.log(res);
       cityElement.textContent = res.address.city || res.address.town;
     });
 
@@ -86,7 +81,6 @@ function getWeather(coords) {
       return res.json();
     })
     .then((res) => {
-      console.log(res);
       temperatureElement.textContent = `${res.current.temperature_2m} ${res.current_units.temperature_2m}`;
     });
 }
