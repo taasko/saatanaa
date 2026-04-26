@@ -181,7 +181,7 @@ function geoFindMe(city) {
       },
       () => {
         console.debug("Unable to retrieve your location");
-      }
+      },
     );
   }
 }
@@ -200,7 +200,7 @@ function geoFindMe(city) {
 function cityToCoordinates(cityName) {
   return cityCoordsMappingPromise.then(() => {
     const city = cityCoordsMapping.find(
-      (item) => item.city.toLowerCase() === cityName.toLowerCase()
+      (item) => item.city.toLowerCase() === cityName.toLowerCase(),
     );
 
     if (!city) {
