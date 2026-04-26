@@ -1,5 +1,10 @@
 # Säätänää
 
+The following files are NOT covered by the MIT license and may be
+subject to third-party copyrights:
+
+- public/meme.png
+
 ## Features
 
 - Real-time infernal weather updates
